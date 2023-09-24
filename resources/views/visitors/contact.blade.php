@@ -50,7 +50,8 @@
               <h2>Drop Us a Line</h2>
               <p>Our customer care agents are ever ready to guide you. Drop us a message</p>
           </div>
-          <form method="post" action="https://trustbund.com/contact.php" class="default-form" novalidate="novalidate"> 
+          <form method="post" action="{{route("postcontact")}}" class="default-form" novalidate="novalidate"> 
+          @csrf
               <div class="row clearfix">
                   <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                       <input type="text" name="username" placeholder="Your Name" required="" aria-required="true">
@@ -79,11 +80,11 @@
 <!--section class="clients-section">
   <div class="auto-container">
       <div class="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-          <figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
+          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
+          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
+          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
+          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
+          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
       </div>
   </div>
 </section-->

@@ -10,32 +10,32 @@
     <title>| Authentication Page</title>
     <!--Favicon add-->
     
-    <link rel="icon"  type="image/png" href="{{asset('assets/images/logo/icon.png')}}">
+    <link rel="icon"  type="image/png" href="{{asset('asseets/images/logo/icon.png')}}">
     <!--bootstrap Css-->
-    <link href="{{asset('assets/front/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/bootstrap.min.css')}}" rel="stylesheet">
     <!--font-awesome Css-->
-    <link href="{{asset('assets/front/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/font-awesome.min.css')}}" rel="stylesheet">
     <!-- Lightcase  Css-->
-    <link href="{{asset('assets/front/css/lightcase.css')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/lightcase.css')}}" rel="stylesheet">
     <!--WOW Css-->
-     <link href="{{asset('assets/front/css/animate.min.css')}}" rel="stylesheet">
+     <link href="{{asset('asseets/front/css/animate.min.css')}}" rel="stylesheet">
     <!--Slick Slider Css-->
-    <link href="{{asset('assets/front/css/slick.css')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/slick.css')}}" rel="stylesheet">
     <!--Slick Nav Css-->
-    <link href="{{asset('assets/front/css/slicknav.min.')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/slicknav.min.')}}" rel="stylesheet">
     <!--Swiper  Css-->
-    <link href="{{asset('assets/front/css/swiper.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/swiper.min.css')}}" rel="stylesheet">
     <!--Style Css-->
-    <link href="{{asset('assets/front/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/style.css')}}" rel="stylesheet">
     <!-- Theam Color Css-->
-    <link href="{{asset('assets/css/color4831.css?color=03423a')}}" rel="stylesheet">
+    <link href="{{asset('asseets/css/color4831.css?color=03423a')}}" rel="stylesheet">
     <!--Responsive Css-->
-    <link href="{{asset('assets/front/css/responsive.css')}}" rel="stylesheet">
+    <link href="{{asset('asseets/front/css/responsive.css')}}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
-   <link rel="stylesheet" href="{{asset('assets/css/ion.rangeSlider.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/css/ranger-style.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/css/ion.rangeSlider.skinFlat.css')}}">
+   <link rel="stylesheet" href="{{asset('asseets/css/ion.rangeSlider.css')}}">
+   <link rel="stylesheet" href="{{asset('asseets/css/ranger-style.css')}}">
+   <link rel="stylesheet" href="{{asset('asseets/css/ion.rangeSlider.skinFlat.css')}}">
     <style>
         /* nav */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -333,11 +333,11 @@ video {
 }
 
    </style>
-    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('asseets/js/jquery.min.js')}}"></script>
 
-    <link rel="stylesheet" href="{{asset('assets/front/2/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('asseets/front/2/css/style.css')}}">
     
-    <script src="{{asset('assets/front/2/js/modernizr.js')}}"></script>
+    <script src="{{asset('asseets/front/2/js/modernizr.js')}}"></script>
 
     <link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 
@@ -352,18 +352,18 @@ video {
     <style>
         @media  only screen and (max-width: 769px){
 .slicknav_nav {
-    background: #03423a;
+    background: steelblue;
 }
 }
 
 .support-bar-top {
-    background: #03423a;
+    background: steelblue;
    
 }
 .footer-support-list {
     text-align: center;
     border-bottom: 8px solid #2c3e50;
-    background-color: #03423a;
+    background-color: steelblue;
     padding: 10px 0px;
 }
 
@@ -371,11 +371,11 @@ video {
     border-bottom: 8px solid #ffffff;
 }
 .footer-area {
-    background: #03423a;
+    background: steelblue;
 }
 
 .admin-section {
-    background-color: #03423a;
+    background-color: steelblue;
     padding: 50px 0px;
 }
 
@@ -384,7 +384,7 @@ video {
 }
 
 .main-menu ul li .mega-menu1 {
-    background-color: #03423a;
+    background-color: steelblue;
 }
 /* GOOGLE TRANSLATOR */
 
@@ -523,48 +523,48 @@ video {
 <!--Google Map APi Key-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
 <!--jquery script load-->
-<script src="{{asset('assets/front/js/jquery.js')}}"></script> 
+<script src="{{asset('asseets/front/js/jquery.js')}}"></script> 
 
-<script src="{{asset('assets/front/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/bootstrap.min.js')}}"></script>
 
 
 <!-- Highlight script load-->
-<script src="{{asset('assets/front/js/highlight.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/highlight.min.js')}}"></script>
 <!--Jquery Ui Slider script load-->
-<script src="{{asset('assets/front/js/jquery-ui-slider.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/jquery-ui-slider.min.js')}}"></script>
 <!--Circleful Js File Load-->
-<script src="{{asset('assets/front/js/jquery.circliful.js')}}"></script>
+<script src="{{asset('asseets/front/js/jquery.circliful.js')}}"></script>
 <!--CounterUp script load-->
-<script src="{{asset('assets/front/js/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/jquery.counterup.min.js')}}"></script>
 <!-- Ripples  script load-->
-<script src="{{asset('assets/front/js/jquery.ripples-min.js')}}"></script>
+<script src="{{asset('asseets/front/js/jquery.ripples-min.js')}}"></script>
 <!--Slick Nav Js File Load-->
-<script src="{{asset('assets/front/js/jquery.slicknav.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/jquery.slicknav.min.js')}}"></script>
 <!--Lightcase Js File Load-->
-<script src="{{asset('assets/front/js/lightcase.js')}}"></script>
+<script src="{{asset('asseets/front/js/lightcase.js')}}"></script>
 <!--particle Js File Load-->
-<script src="{{asset('assets/front/js/particles.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/particles.min.js')}}"></script>
 <!--particle custom Js File Load-->
-<script src="{{asset('assets/front/js/particles-custom.js')}}"></script>
+<script src="{{asset('asseets/front/js/particles-custom.js')}}"></script>
 <!--RainDrops script load-->
-<script src="{{asset('assets/front/js/raindrops.js')}}"></script>
+<script src="{{asset('asseets/front/js/raindrops.js')}}"></script>
 <!--Easing script load-->
-<script src="{{asset('assets/front/js/easing-min.js')}}"></script>
+<script src="{{asset('asseets/front/js/easing-min.js')}}"></script>
 <!--Slick Slider Js File Load-->
-<script src="{{asset('assets/front/js/slick.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/slick.min.js')}}"></script>
 <!--Swiper script load-->
-<script src="{{asset('assets/front/js/swiper.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/swiper.min.js')}}"></script>
 <!--WOW script load-->
-<script src="{{asset('assets/front/js/wow.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/wow.min.js')}}"></script>
 <!--WayPoints script load-->
-<script src="{{asset('assets/front/js/waypoints.min.js')}}"></script>
+<script src="{{asset('asseets/front/js/waypoints.min.js')}}"></script>
 
 <!-- Gmap Load Here -->
-<script src="{{asset('assets/front/js/gmaps.js')}}"></script>
+<script src="{{asset('asseets/front/js/gmaps.js')}}"></script>
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
 <!-- Map Js File Load -->
-<script src="{{asset('assets/front/js/map-script4831.php?color=03423a')}}"></script>
-        <script type="text/javascript" src="{{asset('assets/js/ion.rangeSlider.js')}}"></script>
+<script src="{{asset('asseets/front/js/map-script4831.php?color=03423a')}}"></script>
+        <script type="text/javascript" src="{{asset('asseets/js/ion.rangeSlider.js')}}"></script>
     <script type="text/javascript">
         $(window).load(function() {
             var wow = new WOW({
@@ -622,7 +622,7 @@ video {
         })
     </script>
 <!--Main js file load-->
-<script src="{{asset('assets/front/js/main.js')}}"></script>
+<script src="{{asset('asseets/front/js/main.js')}}"></script>
 
 <!--swal alert message-->
 
@@ -633,7 +633,7 @@ var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.t
 hljs.initHighlightingOnLoad();
 hljs.configure({useBR: true});
 jQuery('#raindrops').raindrops({color:'#fff',canvasHeight:5});
-jQuery('#raindrops-green').raindrops({color:'#03423a ',canvasHeight:5});
+jQuery('#raindrops-green').raindrops({color:'steelblue ',canvasHeight:5});
 
 </script>
 </body>

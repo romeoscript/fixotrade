@@ -9,7 +9,7 @@
 		<div class="paragraph">
 			<h1>our special trades investment package</h1>
 			<p>
-				{{$compd? $compd->Companyname: 'Trustbund'}} Financial Management offers Special trades investment packages to clients with available investment capital of $500,000 or More. Our Experienced Brokers and Traders have comprehensively studied the Digital Space and continuously carry out useful researches. The Special Trade package is a combination of different unique strategies (NFTs, IDO/ERC 20 Portfolio, Initial Exchange Offering & Decentralized Finance “DEFI”) to generate an enormous return after the specified trading days. With a good entry time, we have projected making a minimum ROI of 400% in 3 months
+				{{$compd? $compd->Companyname: 'Future optimax'}} Financial Management offers Special trades investment packages to clients with available investment capital of $500,000 or More. Our Experienced Brokers and Traders have comprehensively studied the Digital Space and continuously carry out useful researches. The Special Trade package is a combination of different unique strategies (NFTs, IDO/ERC 20 Portfolio, Initial Exchange Offering & Decentralized Finance “DEFI”) to generate an enormous return after the specified trading days. With a good entry time, we have projected making a minimum ROI of 400% in 3 months
 			</p>
 		</div>
 		<div class="paragraph">
@@ -51,7 +51,7 @@
 				The most exciting possibility for NFTs lies in the creation of new markets and forms of investment. Consider a piece of real estate parceled out into multiple divisions, each of which contains different characteristics and property types. One of the divisions might be next to a beach while another is an entertainment complex and, yet another, is a residential district. Depending on its characteristics, each piece of land is unique, priced differently, and represented with an NFT. Real estate trading, a complex and bureaucratic affair, can be simplified by incorporating relevant metadata into each unique NFT.
 			</p>
 			<p>
-				With {{$compd? $compd->Companyname: 'Trustbund'}} Financial Management, when you invest in our NFT portfolio, we will help you claim a stake in massive upcoming legitimate token sales. We are able to purchase them at the right time and flip them for profits on your behalf, or just purchase and hold while transferring the asset ownership to you. With a good entry time, we have projected making a minimum return of 400% within 3 months based on the size of capital invested in the portfolio while having your seed capital protected.
+				With {{$compd? $compd->Companyname: 'Future optimax'}} Financial Management, when you invest in our NFT portfolio, we will help you claim a stake in massive upcoming legitimate token sales. We are able to purchase them at the right time and flip them for profits on your behalf, or just purchase and hold while transferring the asset ownership to you. With a good entry time, we have projected making a minimum return of 400% within 3 months based on the size of capital invested in the portfolio while having your seed capital protected.
 			</p>
 		</div>
 		<div class="paragraph">
@@ -67,11 +67,11 @@
 			</p>
 		</div>
 		<div class="paragraph">
-			<h3>What is ERC 20 and what does it provide for an Trustbund Investor &quest;</h3>
+			<h3>What is ERC 20 and what does it provide for an Future optimax Investor &quest;</h3>
 			<p>
 				The popular cryptocurrency and blockchain system Ethereum is based on the use of tokens, which can be bought, sold, or traded. Ethereum was launched in 2015, and since then it has become one of the driving forces behind the popularity of cryptocurrency. In the Ethereum system, tokens represent a diverse range of digital assets, such as vouchers, IOUs, or even real-world, tangible objects. Essentially, Ethereum tokens are smart contracts that make use of the Ethereum blockchain.
 				<br>
-				And that is why at Trustbund Financial Management we tailor our clients need and create a diversified portfolio inclusive of new and high prospective offerings in the digital space.
+				And that is why at Future optimax Financial Management we tailor our clients need and create a diversified portfolio inclusive of new and high prospective offerings in the digital space.
 			</p>
 		</div>
 		<div class="paragraph">
@@ -86,7 +86,7 @@
 				Plenty of well-known digital currencies use the ERC-20 standard, including Maker (MKR), Basic Attention Token (BAT), Augur (REP), and OmiseGO (OMG).
 			</p>
 			<p>
-				{{$compd? $compd->Companyname: 'Trustbund'}} Financial Management board members are in connection with great development teams precisely developing cryptocurrency using the ERC 20 token standard and history has proven to give one of the best projects yields.
+				{{$compd? $compd->Companyname: 'Future optimax'}} Financial Management board members are in connection with great development teams precisely developing cryptocurrency using the ERC 20 token standard and history has proven to give one of the best projects yields.
 			</p>
 			<p>
 				Our duty is to discover the best opportunities while maximizing benefits at minimized risks levels using upper echelon risk management techniques.
@@ -162,7 +162,7 @@ With smart contracts at the core, dozens of DeFi applications are operating on E
 				Due to the nature of IEO's, it's impossible to lose your funds if your seeds were not successful in the lottery as per exchange thereby maintaining a 100% capital guarantee.
 			</p>
 			<p>
-				{{$compd? $compd->Companyname: 'Trustbund'}} Financial Management traders' are sophisticated investors with years of experience in IPO's who bring on their skills and experience to the crypto industry and other disruptive markets. We prepare your account for IEO's and yield farming investments by performing a vast due diligence across multiple exchanges offering any of these services. Should you decide to subscribe to this plan, your trader will inform you if your funds will be invested in IEO or Yield Farming.	
+				{{$compd? $compd->Companyname: 'Future optimax'}} Financial Management traders' are sophisticated investors with years of experience in IPO's who bring on their skills and experience to the crypto industry and other disruptive markets. We prepare your account for IEO's and yield farming investments by performing a vast due diligence across multiple exchanges offering any of these services. Should you decide to subscribe to this plan, your trader will inform you if your funds will be invested in IEO or Yield Farming.	
 			</p>
 			<p>
 				For IEO's, tokens will be purchased at a very cheap price before launch [on exchange by pooling multiple accounts with maximum credits on exchange to optimise the chances of success on launch day and will be traded continuously to meet the contract demands.

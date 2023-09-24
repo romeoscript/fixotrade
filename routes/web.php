@@ -529,6 +529,9 @@ Route::post('/postcontact', [App\Http\Controllers\VisitorController::class, 'pos
 Route::get('/assetsmanagement', [App\Http\Controllers\VisitorController::class, 'assetsmanagement'])->name('assetsmanagement');
 Route::get('/testimony', [App\Http\Controllers\VisitorController::class, 'testimony'])->name('testimony');
 Route::get('/fiduciary', [App\Http\Controllers\VisitorController::class, 'fiduciary'])->name('fiduciary');
+Route::get('/client', [App\Http\Controllers\VisitorController::class, 'client'])->name('client');
+Route::get('/realestatetrade', [App\Http\Controllers\VisitorController::class, 'realestatetrade'])->name('realestatetrade');
+Route::get('/history', [App\Http\Controllers\VisitorController::class, 'history'])->name('history');
 
 Route::get('/ourteam', [App\Http\Controllers\VisitorController::class, 'ourteam'])->name('ourteam');
 

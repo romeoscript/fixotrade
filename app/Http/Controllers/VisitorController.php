@@ -44,7 +44,33 @@ class VisitorController extends Controller
     $data['title']="About Us";
         return view ('visitors.about', $data);
     }
-
+    public function history()
+    {
+        # code...
+    $data=[];
+    $company_detail = Sitesetting::where('id', 1)->first();
+    $data['compd'] = $company_detail;
+    $data['title']="history";
+        return view ('visitors.history', $data);
+    }
+    public function client()
+    {
+        # code...
+    $data=[];
+    $company_detail = Sitesetting::where('id', 1)->first();
+    $data['compd'] = $company_detail;
+    $data['title']="client ";
+        return view ('visitors.client', $data);
+    }
+    public function realestatetrade()
+    {
+        # code...
+    $data=[];
+    $company_detail = Sitesetting::where('id', 1)->first();
+    $data['compd'] = $company_detail;
+    $data['title']="realestatetrade ";
+        return view ('visitors.realestatetrade', $data);
+    }
 
     public function blog()
     {

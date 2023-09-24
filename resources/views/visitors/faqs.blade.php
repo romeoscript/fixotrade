@@ -35,7 +35,7 @@
   <dl class="accordion-container">
     <dt class="accordion-header">
       How long does my deposit take before it can reflect
-      on my Trustbund Investments account dashboard &quest;
+      on my Future optimax Investments account dashboard &quest;
     </dt>
     <dd class="accordion-body">
       Your deposit will be reflected immediately once it is confirmed on the blockchain
@@ -82,7 +82,7 @@ Is this company properly registered &quest;
 </dt>
 <dd class="accordion-body">
 Yes we are officially and properly registered with the United States, our company registration number is
-602425294 and registred with the name Trustbund Financials.
+602425294 and registred with the name Future optimax Financials.
 </dd>
 </dl>
 </div>

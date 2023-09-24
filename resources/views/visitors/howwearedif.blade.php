@@ -27,7 +27,7 @@
     <div class="flex">
         <div class="text-section">
          <p>
-             For over 20 years, {{$compd? $compd->Companyname: 'Coming soon'}} Financial Management has worked in our client's best interests by thinking and acting independently rather than following outdated industry practices. Our personalized approach, our total commitment to serving our clients and our investing experience make us unique in our industry. That’s why Trustbund Financial Management currently manages $165 billion for investors worldwide and helps over 35,000 clients meet their financial goals.
+             For over 20 years, {{$compd? $compd->Companyname: 'Coming soon'}} Financial Management has worked in our client's best interests by thinking and acting independently rather than following outdated industry practices. Our personalized approach, our total commitment to serving our clients and our investing experience make us unique in our industry. That’s why Future optimax Financial Management currently manages $165 billion for investors worldwide and helps over 35,000 clients meet their financial goals.
          </p>
          <p>
              Over the years, we have succeeded in creating a reputable and successful brand, and as they say, success has many friends. This has allowed us to work with seasoned and well-respected individuals, organizations, corporate bodies, and many more. Like a fledgling adolescent, we have kept on growing, while retaining and upholding our different standards.
@@ -43,7 +43,7 @@
 <section>
     <h3>Clearly Different Money Management</h3>
     <p>
-        Our exceptional and unique culture ensures that we entice and retain so many quality clients. We have achieved a certain level of notoriety over the years, and we continue to feel esteemed to have received such fame, appreciation, and approval from a variety of genuinely respected clients. Not sitting on our oars, Trustbund Financial Management is still looking for ways to improve and offer better financial services. Financial services is not just a business for us; it’s our life.
+        Our exceptional and unique culture ensures that we entice and retain so many quality clients. We have achieved a certain level of notoriety over the years, and we continue to feel esteemed to have received such fame, appreciation, and approval from a variety of genuinely respected clients. Not sitting on our oars, Future optimax Financial Management is still looking for ways to improve and offer better financial services. Financial services is not just a business for us; it’s our life.
     </p>
     <div class="flex">
         <div class="img-container small-container">
@@ -52,7 +52,7 @@
         <div class="text-content">
             <h4>Advice that is always in your best interest</h4>
             <p>
-                Our exceptional and unique culture ensures that we entice and retain so many quality clients. We have achieved a certain level of notoriety over the years, and we continue to feel esteemed to have received such fame, appreciation, and approval from a variety of genuinely respected clients. Not sitting on our oars, Trustbund Financial Management is still looking for ways to improve and offer better financial services. Financial services is not just a business for us; it’s our life.
+                Our exceptional and unique culture ensures that we entice and retain so many quality clients. We have achieved a certain level of notoriety over the years, and we continue to feel esteemed to have received such fame, appreciation, and approval from a variety of genuinely respected clients. Not sitting on our oars, Future optimax Financial Management is still looking for ways to improve and offer better financial services. Financial services is not just a business for us; it’s our life.
             </p>
         </div>
     </div>

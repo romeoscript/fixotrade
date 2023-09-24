@@ -10,7 +10,7 @@
  <section>
  	<div class="paragraph stocksandshare-header header">
     		<h1>
-    			<span class="line"></span> Trustbund fx <span class="line"></span>
+    			<span class="line"></span> Future optimax fx <span class="line"></span>
     		</h1>
     	</div>
     	<div class="paragraph">

@@ -1,0 +1,667 @@
+
+.section-header h3{
+    font-size: 20px;
+    color:steelblue;
+
+}
+.section-header p:before{
+    background-color: steelblue;
+}
+.section-header p:after{
+    background-color: steelblue;
+}
+.back-to-top {
+    background: steelblue;
+}
+.support-bar-top {
+    border-bottom: 3px solid steelblue;
+}
+.support-bar-top a:hover {
+    color: steelblue;
+}
+.main-menu ul  li a::before {
+    background: steelblue;
+}
+.main-menu ul li a:hover{
+    color: steelblue;
+}
+.main-menu ul li   .mega-menu .mega-banner .mega-menu-banner{
+   background: steelblue;
+}
+.main-menu ul li   .mega-menu .mega-banner .mega-menu-banner a{
+    color: steelblue;
+}
+#header-menu>.menu-active>a, .main-menu-active>.menu-active>a:focus, .main-menu-active>.menu-active>a:hover {
+    color: steelblue;
+}
+.carousel .carousel-control1 {
+    background-color: steelblue;
+}
+.carousel-indicators .active {
+    background-color: steelblue;
+}
+.header-overlay:before {
+  background-color:  steelblue;
+}
+.domain-search-from input[type=text] {
+    border-right: 2px solid steelblue;
+}
+.domain-search-from input[type=submit] {
+    background: steelblue;
+}
+.admin-section{
+    border-top:8px solid steelblue;
+}
+.admin-content .admin-user button{
+    border:2px solid steelblue;
+}
+.admin-content .admin-user button:hover{
+   background-color: steelblue;
+}
+.service-content .service-list ul li.active:before {
+    background-color: steelblue;
+}
+.service-content .service-list ul li.active:after {
+    background-color: steelblue;
+}
+ .service-content .service-list ul li.active .service-thumb{
+    border:1px solid steelblue;
+ }
+ .service-content .service-list ul li.active a  i{
+    border: 1px solid steelblue;
+    background-color: steelblue;
+}
+  .service-content .service-list ul li.active a span i{
+    background-color: steelblue;
+ }
+  .service-content .service-list ul li.active a p{
+    color:steelblue;
+
+ }
+ .service-content .service-list ul li.active p {
+    color: steelblue;
+}
+.service-content .service-item .service-text a:hover{
+    background-color: steelblue;
+}
+.pricing-list .pricing-item{
+    background-color: steelblue;
+}
+.pricing-list .pricing-item:hover .pricing-header {
+    background-color: steelblue;
+}
+.pricing-list .pricing-item:hover .pricing-info{
+    background-color: steelblue;
+}
+.pricing-list .pricing-item .pricing-info ul {
+    background-color: steelblue;
+}
+  .other-service .other-service-list {
+    border-top: 3px  dotted steelblue;
+}
+.other-service .other-service-list ul li.active .other-select-border {
+        border: 2px dotted steelblue;
+    }
+.other-service .other-service-list ul li.active .other-select-border a i {
+        background-color: steelblue;
+    }    
+.other-service .other-service-content .other-service-content1 .other-service-text ul li p i {
+        color: steelblue;
+    }
+.other-service .other-service-content .other-service-content1 .other-service-text a {
+ background-color: steelblue;
+}
+.newsletter-section{
+    background-color: steelblue;
+}
+.online-content ul li .online-item2 .online-text button:hover{
+    background-color: steelblue;
+
+}
+.sale-header{
+    border-bottom: 1px solid steelblue;
+}
+.sale-header h2{
+    border-bottom: 1px solid steelblue;
+}
+.sale-header h2 span{
+    color:steelblue;
+}
+.sale-content p span{
+    color:steelblue;
+}
+.sale-content button {
+    background-color: steelblue;
+}
+.sale-content button:hover {
+    color: steelblue;
+}
+.team-item .team-overlay ul li a i {
+    color: steelblue;
+}
+.support-content a{
+    background-color: steelblue;
+}
+.support-bar-top a span:hover,
+.support-bar-top a:hover span {
+    color: steelblue;
+}
+.counter-list .counter-thumb{
+    background-color: steelblue;
+    border:5px solid steelblue;
+}
+.blog-list .blog-thumb .blog-text2 {
+    background-color: steelblue;
+}
+.blog-list .blog-content:hover  a{
+    background-color: steelblue;
+}
+.testimonial-overlay{
+    background-color: rgba(233,62,33,.9);
+}
+.footer-support-list{
+ border-bottom: 8px solid steelblue;
+}
+.widget-read-more {
+    color: steelblue;
+}
+.widget-one-footer i {
+    color: steelblue;
+}
+.widget-two-body ul li a:hover {
+    color: steelblue;
+}
+.footer-contact-form input[type=text]:focus,
+.footer-contact-form input[type=email]:focus {
+    border: 1px solid steelblue;
+}
+.footer-contact-form input[type=submit] {
+    background: steelblue;
+}
+.footer-menu ul li a:hover {
+    color: steelblue;
+}
+.live-chat-btn {
+    background: steelblue;
+}
+.live-chat-btn i {
+    background: steelblue;
+}
+.footer-social-links a i {
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+.pricing-list1 {
+    border-bottom: 8px solid steelblue;
+}
+.pricing-list1:hover{
+    background-color: steelblue;
+}
+.pricing-list1 .pricing-header1:after {
+    background-color: steelblue;
+}
+.pricing-list1 a {
+    background-color: steelblue;
+}
+.pricing-list2 .pricing-thumb i{
+    color:  steelblue;
+}
+#pricing-2 .slider-bg {
+  background-color: rgba(233,62,33, 0.4);
+}
+#pricing-2 #pricing-slider .ui-slider-range {
+  background-color: steelblue; }
+
+#pricing-2 #pricing-slider .ui-slider-handle {
+  background-color: steelblue;
+}
+
+#pricing-2 .info-item {
+  background-color: steelblue;
+}
+#pricing-2 .order-button a {
+  border: 1px solid steelblue;
+}
+#pricing-2 .order-button a:hover .right {
+  background-color: steelblue;
+}
+#pricing-2 .order-button .right {
+  color: steelblue;
+}
+.hosting-content table tbody tr td a:hover {
+    background-color: steelblue; 
+}
+.feature-list .feature-thumb i{
+    color: steelblue; 
+    border:1px solid steelblue; 
+}
+.feature-list .feature-content h6{
+    color: steelblue;
+}
+.feature-list1:hover .feature-thumb i{
+    color:  steelblue;
+    border:1px solid steelblue;
+
+}
+.feature-list1:hover .feature-content h6{
+    color: steelblue;
+}
+.hostpress-content h6{
+    color: steelblue;
+}
+.hostingspeed-content .hostingspeed-text h6{
+    color:steelblue;
+}
+  .service-list1 i {
+    color: steelblue;
+    border: 1px solid steelblue;
+ }
+.service-list1 .service-text a {
+      background-color: steelblue;
+      border: 1px solid steelblue;
+ }
+.service-list1 .service-text a:hover {
+  border: 1px solid steelblue;
+  color: steelblue;
+}
+.vps-feature .feature-header h1 {
+    color: steelblue; }
+.vps-feature .feature-list li i {
+      color: steelblue;
+ }
+.vps-feature a {
+  border: 1px solid steelblue;
+  background-color: steelblue;
+ }
+.parallax-content a {
+    background-color: steelblue;
+}
+.parallax-content a:hover {
+  color: steelblue; 
+}
+.widget-list h4{
+  color: steelblue;
+}
+.widget-search button{
+  background-color: steelblue;
+}
+.widget-search button {
+  background-color: steelblue;
+}
+.widget-search button:hover{
+  color: steelblue;
+}
+.widget-list ul li a{
+  color: #443a44;
+}
+.widget-list ul li:hover a{
+  color: steelblue;
+}
+.widget-list ul li:hover span{
+    color: steelblue;
+    border:1px solid steelblue;
+}
+.widget-tags ul li:hover {
+   border: 1px solid  steelblue;
+}
+.widget-tags ul li a{
+  color: steelblue;
+}
+.widget-tags ul li:hover a{
+   background-color: steelblue;
+}
+.blog-latest .sidebar-posts .text-box-right h6 a {
+  color: steelblue;
+}
+.blog-single-content .blog-thumb p {
+  background-color: steelblue;
+}
+.blog-single-content .blog-content h4 {
+  color:steelblue;
+}
+.blog-single-content .blog-content .blog-text h4 a {
+    color:steelblue;
+}
+.blog-single-content .blog-content .blog-text .iconlist li i {
+  color: steelblue;
+}
+.blog-single-content .blog-content .blog-text .social-icons-2 li a i {
+  background-color: steelblue;
+}
+.blog-single-content .blog-content .blog-author .blog-list .blog-text a {
+  border: 1px solid steelblue; 
+}
+.blog-single-content .blog-content .blog-author .blog-list .blog-text a:hover {
+  background-color: steelblue;
+  border: 1px solid steelblue; 
+}
+.blog-single-content .blog-content .other-blog h4 a {
+  color: steelblue;
+}
+.blog-single-content .blog-content .other-blog h5 a {
+    color: steelblue;
+}
+.blog-single-content .blog-comment ul li .blog-list .blog-text a {
+  border: 1px solid steelblue; 
+  }
+.blog-single-content .blog-comment ul li .blog-list .blog-text a:hover {
+  background-color: steelblue;
+  border: 1px solid steelblue; 
+  }
+.blog-single-content .blog-comment a.loadmore-but {
+    background-color: steelblue;
+}
+.add-review-list button {
+    background-color: steelblue;
+}
+.selected-domain-thumb i{
+    color: steelblue;
+}
+.selected-domain-text p a{
+    color: steelblue;
+}
+.selected-domain-submit span{
+    color: steelblue;
+}
+.selected-domain-submit button{
+    background-color: steelblue;
+}
+.selected-list{
+    border-left:1px solid rgba(233,62,33,.9);
+    border-right:1px solid rgba(233,62,33,.9);
+    border-bottom:1px solid rgba(233,62,33,.9);
+    background-color: rgba(233,62,33,.5);
+}
+.selected-list .selected-list-cart button:hover{
+  background-color: steelblue;
+}
+.contact-info .contact-content .contact-list ul li .contact-thumb i{
+  color:steelblue;
+}
+.contact-form h2:after{
+    background-color:steelblue;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border-color:steelblue;
+}
+.contact-form button{
+    background: steelblue;
+    border: 2px solid steelblue;
+}
+#isotopemenu ul li.active p{
+    color: steelblue;
+}
+.layer{
+    background: rgba(233,62,33,.7);
+}
+.isotope-social a i {
+  color: steelblue;
+}
+.isotope-social a i:hover{
+    background-color: steelblue;
+}
+.all-image a {
+  background-color: steelblue;
+}
+.login-admin .login-form input[type="submit"]{
+    background-color: steelblue;
+}
+.login-admin .social-login ul li a {
+    background-color: steelblue;
+}
+.cooming-content input[type="email"]:focus{
+    background-color: steelblue;
+}
+.cooming-content input[type="submit"]{
+    background-color: steelblue;
+}
+.cart-content table tbody tr:hover td a {
+    color:steelblue;
+}
+.cart-content table tfoot {
+    background-color: steelblue;
+}
+.cart-price .cart-coupon input[type="submit"]{
+  background: steelblue;
+}
+.cart-price .cart-total ul li p.cart-color {
+    color:steelblue;
+}
+.cart-price .cart-total ul li button {
+    background: steelblue;
+}
+.error-thumb p {
+    color: steelblue;
+}
+.error-content h1{
+    color: steelblue;
+}
+.error-content a{
+  background-color: steelblue;
+}
+.affiliate-item .affiliate-content h4 span{
+    color: steelblue;
+}
+.referral-amount{
+    border-top:5px solid steelblue;
+}
+.referral-amount:before{
+    background-color: steelblue;
+}
+.referral-amount p{
+    border-bottom: 1px solid steelblue;
+}
+.referral-amount h5{
+    background-color: steelblue;
+}
+.signup-affiliate a{
+    background-color: steelblue;
+}
+.about-info.about-light {
+    background-color: steelblue;
+}
+.about-info.about-light .btn.modern:hover {
+    color: steelblue;
+}
+.accordion .panel-heading a, .faq-categories ul li a:hover, .faq-categories ul li.active a {
+    background-color: steelblue;
+}
+.popular-plan-content h3 span{
+    color: steelblue;
+}
+.popular-plan-content ul li i{
+    color: steelblue;
+}
+.popular-plan-content ul li p{
+    color: steelblue;
+}
+.popular-plan-content ul li span{
+    color: steelblue;
+}
+.popular-plan-thumb {
+    background-color: steelblue;
+}
+.popular-plan-thumb button:hover{
+    border: solid 2px steelblue;
+}
+.popular-plan-thumb1 button{
+    background-color: steelblue;
+    border: solid 2px steelblue;
+}
+.popular-plan-thumb1 .popular-ribbon .ribbon{
+    background-color: steelblue;
+}
+.testimonial-area .sin-testiImage img {
+    border: 1px solid  steelblue;
+}
+.testimonial-area .sin-testiImage.slick-current img {
+  border: 3px solid steelblue;
+ }
+.datacenter-content h4 {
+  color: steelblue;
+}
+.client-list .client-container .our-client:hover {
+  border: 1px solid steelblue;
+}
+.cooming-content a {
+    background-color: steelblue;
+}
+
+.footer-social-links a:hover i {
+    background-color: steelblue;
+    color: #fff;
+    border: 1px solid #2c3e50;
+}
+
+.service-wrapper {
+    background: steelblue;
+    border: 1px solid steelblue;
+}
+
+.service-wrapper:hover {
+    background: #ffffff;
+    border: 1px solid steelblue;
+}
+
+.service-wrapper:hover i{
+    color: steelblue;
+}
+
+.service-wrapper:hover p{
+    color: steelblue;
+}
+
+.discunt-middel-text {
+    background:steelblue;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999999
+}
+
+[data-loader=circle-side] {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    -webkit-animation: circle infinite .95s linear;
+    -moz-animation: circle infinite .95s linear;
+    -o-animation: circle infinite .95s linear;
+    animation: circle infinite .95s linear;
+    border: 2px solid steelblue;
+    border-top-color: rgba(0, 0, 0, .2);
+    border-right-color: rgba(0, 0, 0, .2);
+    border-bottom-color: rgba(0, 0, 0, .2);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%
+}
+
+.panel-green {
+    border-color: steelblue!important;
+}
+
+.panel-green > .panel-heading {
+    border-color: steelblue!important;
+    color: white;
+    background-color: steelblue!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: steelblue!important;
+    border-color:steelblue!important;
+}
+
+.panel-default {
+    border-color: steelblue!important;
+}
+
+.panel-default> .panel-heading {
+     border-color: steelblue!important;
+    color: white;
+    background-color: steelblue!important;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: steelblue!important;
+    border-color:steelblue!important;
+}
+
+.new-btn-submit {
+    background-color: steelblue;
+}
+
+.admin-header-button.support-btn {
+    background: #2c3e50;
+}
+.open-support-btn h5 {
+    background-color: #2c3e50;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    background-color: steelblue;
+    border: 1px solid transparent;
+}
+
+ h2 span {
+    color: steelblue;
+}
+
+.section-background{
+background: aliceblue;
+}
+.sale-section p{
+color:#fff;
+}
+
+.login-admin input, .login-admin textarea{
+  border: 1px solid steelblue!important;
+}
+
+.contact-middel-details i{
+      color: steelblue;
+}
+
+.breadcrumb-content h5 {
+  font-weight: 700;
+}
+
+.contact-form textarea {
+  background: aliceblue;
+}
+
+
+.contact-info .contact-content .contact-list ul li {
+  padding: 20px 0 10px 0;
+  border-bottom: 2px solid #fff;
+}
+
+
+.slicknav_btn {
+  background: steelblue !important;
+  border: 1px solid steelblue  !important;
+}
+
+.slicknav_menu .slicknav_icon span {
+  background: #FFF  !important;
+}

@@ -171,7 +171,7 @@ your retirement savings.
 					<figure class="image-box"><img src="assets/images/gallery/project-1.jpg" alt=""></figure>
 					<div class="lower-content">
 						<p>Corporate Management</p>
-						<h2><a href="/">Global Management Apps</a></h2>
+						<h2><a href="index.html">Global Management Apps</a></h2>
 					</div>
 				</div>
 			</div>
@@ -180,7 +180,7 @@ your retirement savings.
 					<figure class="image-box"><img src="assets/images/gallery/project-2.jpg" alt=""></figure>
 					<div class="lower-content">
 						<p>Financial Initiatives</p>
-						<h2><a href="/">Planning & Task Completion</a></h2>
+						<h2><a href="index.html">Planning & Task Completion</a></h2>
 					</div>
 				</div>
 			</div>
@@ -189,7 +189,7 @@ your retirement savings.
 					<figure class="image-box"><img src="assets/images/gallery/project-3.jpg" alt=""></figure>
 					<div class="lower-content">
 						<p>Corporate Management</p>
-						<h2><a href="/">Private Workshop Assistant</a></h2>
+						<h2><a href="index.html">Private Workshop Assistant</a></h2>
 					</div>
 				</div>
 			</div>
@@ -201,11 +201,11 @@ your retirement savings.
 <!--section class="clients-section">
 	<div class="auto-container">
 		<div class="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-			<figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
-			<figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
-			<figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
-			<figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
-			<figure class="client-logo"><a href="/"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
+			<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
+			<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
+			<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
+			<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
+			<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
 		</div>
 	</div>
 </section-->
