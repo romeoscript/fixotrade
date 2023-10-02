@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from highclove.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Nov 2021 12:25:01 GMT -->
+<!-- Mirrored from futuresoptimax.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Nov 2021 12:25:01 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
@@ -639,5 +639,5 @@ jQuery('#raindrops-green').raindrops({color:'steelblue ',canvasHeight:5});
 </script>
 </body>
 
-<!-- Mirrored from highclove.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Nov 2021 12:26:43 GMT -->
+<!-- Mirrored from futuresoptimax.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Nov 2021 12:26:43 GMT -->
 </html>
