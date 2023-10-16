@@ -1,149 +1,126 @@
-@extends("layouts.spacedcustomlayout")
+@extends('layouts.spacedcustomlayout')
 
-@section("body")
+@section('body')
+    <!-- START Section Page Title -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase mb-4 c-white">Contact us</h2>
+                    <ul class="breadcrumb mb-0 justify-content-center">
+                        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                        <li class="breadcrumb-item active">Contact us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Section Page Title -->
 
-
-<!-- START SECTION BANNER -->
-<section class="page-title centred" style="background-image: url(assets/images/background/page-title.jpg);">
-  <div class="auto-container">
-      <div class="content-box clearfix">
-          <ul class="bread-crumb clearfix">
-              <li><a href="/">Send Us A Message</a></li>
-          </ul>
-          <h1>Get Support</h1>                
-      </div>
-  </div>
-</section><section class="contact-information centred">
-  <div class="auto-container">
-      <div class="sec-title right">
-          <h5>Contact Us</h5>
-          <h2>We’re Ever Ready <br>To Help You</h2>
-      </div>
-      <div class="row clearfix">
-          <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-              <div class="single-item wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-                  <div class="inner-box">
-                      <div class="icon-box"><i class="far fa-map"></i></div>
-                      <h3>Visit Us</h3>
-                      <p>Flat 41 Brookfield Farm, Curzon St, Lbstock, United Kingddom, LE67 6LA</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-              <div class="single-item wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                  <div class="inner-box">
-                      <div class="icon-box"><i class="far fa-envelope-open"></i></div>
-                      <h3>Email Us</h3>
-                      <p><a href="mailto:{{ $compd ? $compd->companyemail : 'company email' }}">{{ $compd ? $compd->companyemail : 'company email' }}</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="contact-style-two" style="background-image: url(assets/images/background/contact-3.jpg);">
-  <div class="auto-container">
-      <div class="col-xl-8 col-lg-12 col-md-12 inner-column">
-          <div class="sec-title left light">
-              <h5>need assistance?</h5>
-              <h2>Drop Us a Line</h2>
-              <p>Our customer care agents are ever ready to guide you. Drop us a message</p>
-          </div>
-          <form method="post" action="{{route("postcontact")}}" class="default-form" novalidate="novalidate"> 
-          @csrf
-              <div class="row clearfix">
-                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                      <input type="text" name="username" placeholder="Your Name" required="" aria-required="true">
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                      <input type="email" name="email" placeholder="Email address" required="" aria-required="true">
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                      <input type="text" name="phone" placeholder="Phone" required="" aria-required="true">
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                      <input type="text" name="subject" placeholder="Subject" required="" aria-required="true">
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                      <textarea name="msg" placeholder="Message"></textarea>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                      <button class="theme-btn style-one" type="submit" name="send">Send Message</button>
-                  </div>
-              </div>
-          </form>
-      </div>
-  </div>
-</section>        
-</div>
-<!--section class="clients-section">
-  <div class="auto-container">
-      <div class="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
-      </div>
-  </div>
-</section-->
-
-<section class="cta-section">
-  <div class="auto-container">
-      <div class="inner-container clearfix">
-          <div class="title pull-left">
-              <h2>Open account for free and start investing!</h2>
-          </div>
-          <div class="btn-box pull-right">
-              <a href="{{route('register')}}">Get Started</a>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- cta-section end -->
-
-
-<!-- fun-fact -->
-<section class="fun-fact centred">
-  <div class="auto-container">
-      <div class="row clearfix">
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <span class="count-text" data-speed="1500" data-stop="100253">0</span>
-                  </div>
-                  <p>Active Users</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <span class="count-text" data-speed="1500" data-stop="1338">0</span>
-                  </div>
-                  <p>Running Days</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <img src="images/coins/usdt.html" style="width: 30px; height: auto;" alt=""> USDT <span class="count-text" data-speed="1500" data-stop="300021142.336">0</span>
-                  </div>
-                  <p>DEPOSIT</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <img src="images/coins/usdt.html" style="width: 30px; height: auto;" alt=""> USDT <span class="count-text" data-speed="1500" data-stop="303452266721.39">0</span>
-                  </div>
-                  <p>WITHDRAWALS</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+    <!-- START Section Contact Us -->
+    <section class="bg-white sp-100-70 contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="btm-sep pb-3 mb-5">Get in touch</h3>
+                </div>
+                <div class="col-lg-8 mb-60 mb-lg-0 pr-lg-5">
+                    <div class="bg-white contact-form">
 
 
 
+
+                        <script language=javascript>
+                            function checkform() {
+                                if (document.mainform.name.value == '') {
+                                    alert("Please type your full name!");
+                                    document.mainform.name.focus();
+                                    return false;
+                                }
+                                if (document.mainform.email.value == '') {
+                                    alert("Please enter your e-mail address!");
+                                    document.mainform.email.focus();
+                                    return false;
+                                }
+                                if (document.mainform.message.value == '') {
+                                    alert("Please type your message!");
+                                    document.mainform.message.focus();
+                                    return false;
+                                }
+                                return true;
+                            }
+                        </script>
+
+                      
+                        <form method="post" action="{{ route('postcontact') }}"  class="form"  novalidate="novalidate">
+                            @csrf
+                         
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="error_contact"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                        <span class="zmdi zmdi-account"></span>
+                                        <input type="text" class="form-control" placeholder="Enter Name" name="username"
+                                            value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                        <span class="zmdi zmdi-email"></span>
+                                        <input type="text" class="form-control" placeholder="Enter Email" name="email"
+                                            value="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea rows="8" class="form-control" placeholder="Your Message" name="msg"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-lg btn-custom" id="contact-submit" name="send" value="Send">
+                                        <i class="fa fa-paper-plane"></i> Send
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-30">
+                    <ul class="contact-detail">
+                        <li class="mb-30">
+                            <i class="zmdi zmdi-pin"></i>
+                            <h5 class="mb-2 c-white">Address</h5>
+                            <p class="mb-0 c-white">2 Savoy Court, London, WC2R 0EZ. </p>
+                        </li>
+                        <li class="mb-30">
+                            <i class="zmdi zmdi-email"></i>
+                            <h5 class="mb-2 c-white">Email</h5>
+                            <p class="mb-0 c-white"><a href="mailto:{{$compd? $compd->Companyemail: 'Coming soon'}}"
+                                    style=" color: #fff;">{{$compd? $compd->Companyemail: 'Coming soon'}}</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Section Contact Us -->
+
+    <!-- START Section Clients -->
+    <section class="sp-100 bg-white clients-section">
+        <div class="container">
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.112773500161!2d14.442772615748872!3d35.89525358014485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e50230895354d%3A0x6f437fc9ce1ec68!2sSt%20Anthony%20St%2C%20Malta!5e0!3m2!1sen!2sca!4v1604314074407!5m2!1sen!2sca" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+        </div>
+    </section>
+    <!-- END Sections Clients -->
 @endsection()

@@ -1,129 +1,226 @@
-@extends("layouts.spacedcustomlayout")
+@extends('layouts.spacedcustomlayout')
 
-@section("body")
+@section('body')
+    <!-- START Section Page Title -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase mb-4 c-white">Private Policy</h2>
+                    <ul class="breadcrumb mb-0 justify-content-center">
+                        <li class="breadcrumb-item"><a href="?a=home">Home</a></li>
+                        <li class="breadcrumb-item active">Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Section Page Title -->
 
-
-
-<div class="main-content-wrapper">
-        
-	<!-- START SECTION BANNER -->
-	<section class="page-title centred" style="background-image: url(assets/images/background/page-title.jpg);">
-			<div class="auto-container">
-				<div class="content-box clearfix">
-					<ul class="bread-crumb clearfix">
-						<li><a href="/">{{ $compd ? $compd->companyname : 'company name' }}</a></li>
-					</ul>
-					<h1>Privacy Policy</h1>                
-				</div>
-			</div>
-		</section>
-	<div class="about_content">
-	<div class="container">
-	<div class="row">
-						<div class="col-12 col-md-12 mb-4 mb-lg-6 mx-auto reveal">
-							<h2 class="mb-2 h3-font font-w--700">Our Policy</h2>
-							<p class="mb-4">Our company understands the importance of personal information of every participant. Cooperating with our company, 
-									you can be sure in privacy of your personal information and in its protection by our employees. 
-									Our employees protect the collected by them information from unauthorized access. 
-									We use a variety of technologies to reduce the risk of theft of accounts and receiving personal information of 
-									our investors.</p>
-							<p>"Personal information" includes such items as:</p>
-							
-							<ul class="list-unstyled tech-feature-list mb-3">
-									<li class="py-1"><li class="fa fa-check color-secondary"></li>Name and Last Name of the investor
-									</li>
-									<li class="py-1"><li class="fa fa-check color-secondary"></li>Email of investor
-									</li>
-									<li class="py-1"><li class="fa fa-check  mr-2 color-secondary"></li>Contact address of investor</li>
-								</ul>
-							
-							<p class="mb-4">Our company collects your personal information only with your consent and confidence in the security of your personal information on our project. Users should note, that the collection of personal information is only from adult. The rules of our company explain, how your information is collected and used. These rules apply only in our website. Information which is collected when you visit this site. This types of information are also the part of the personal information. Customer information, whether public or private, will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without the consent of the customer, other than for the express purpose of delivering the purchased product or service requested by the customer.
-	For your safety and protection, your credit card information is not stored on our servers. Our payment gateway provider, (insert providers name/s here), keeps this information encrypted and secure on your behalf.
-	The email address you provide for order processing, may be used to send you information and updates pertaining to your account, in addition to periodic company news, updates, and/or related product or service information, etc. If you decide to opt-in to our mailing list, you will receive emails that may include company news, updates, related product or service information, promotions, etc. However, you may opt-out at any time by (please enter the opt-out or unsubscribe process here. This may be something like clicking the unsubscribe button at the bottom of your emails.</p>
-								<h5>Information Storage</h5>
-								<p>Saving of information is only in our company or its equipment. Personal information is stored in accordance with the rules of storage and disposal, which are set for archive of our company. To receive your personal information, contact direct with our employees.</p>
-								<h5>Contact Information</h5>
-								<p>{{ $compd ? $compd->companyname : 'company name' }} is glad to receive your comments concerning this "Privacy Policy". In case you think that {{ $compd ? $compd->companyname : 'company name' }} does not follow the rules and violate this Statement, contact us at <a href='mailto:{{ $compd ? $compd->companyemail : 'company email' }}'>{{ $compd ? $compd->companyemail : 'company email' }}</a> We guarantee that we will take commercially reasonable efforts to discover and solve the problem.</p>
-							
-						</div>
-						
-					</div>
-	</div>
-	</div>
-	
-		</div>
-	<!-- END SECTION BLOG -->
-	<!--section class="clients-section">
-			<div class="auto-container">
-				<div class="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-					<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
-					<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
-					<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
-					<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
-					<figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
-				</div>
-			</div>
-		</section-->
-	
-	<section class="cta-section">
-			<div class="auto-container">
-				<div class="inner-container clearfix">
-					<div class="title pull-left">
-						<h2>Open account for free and start investing!</h2>
-					</div>
-					<div class="btn-box pull-right">
-						<a href="{{route('register')}}">Get Started</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- cta-section end -->
-	
-	
-		<!-- fun-fact -->
-		<section class="fun-fact centred">
-			<div class="auto-container">
-				<div class="row clearfix">
-					<div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-						<div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-							<div class="count-outer count-box" style="font-size: 35px;">
-								<span class="count-text" data-speed="1500" data-stop="100253">0</span>
-							</div>
-							<p>Active Users</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-						<div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-							<div class="count-outer count-box" style="font-size: 35px;">
-								<span class="count-text" data-speed="1500" data-stop="1338">0</span>
-							</div>
-							<p>Running Days</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-						<div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-							<div class="count-outer count-box" style="font-size: 35px;">
-								<img src="images/coins/usdt.html" style="width: 30px; height: auto;" alt=""> USDT <span class="count-text" data-speed="1500" data-stop="300021142.336">0</span>
-							</div>
-							<p>DEPOSIT</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-						<div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-							<div class="count-outer count-box" style="font-size: 35px;">
-								<img src="images/coins/usdt.html" style="width: 30px; height: auto;" alt=""> USDT <span class="count-text" data-speed="1500" data-stop="303452266721.39">0</span>
-							</div>
-							<p>WITHDRAWALS</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		
-		
-		
+    <!-- START Section Career -->
+    <section class="career-single bg-white sp-100">
+        <div class="container">
+            <div class="row">
 
 
 
+
+                <!-- START Left Side-->
+                <div class="col-lg-12 order-lg-1">
+                    <div class="career-content-box mb-60">
+                        <div class="title-left">
+                            <h4 class="top-sep mb-30">Privacy Policy</h4>
+                        </div>
+                        <p>Please read the following carefully.<br><br>
+
+
+
+                        <p align=justify>
+
+
+                            By using our website, and communicating with us via email or other electronic messages
+                            (collectively, “Digital Presence”), you consent to: (1) the collection, use, and storage of
+                            your personal and non-personal information, and (2) the Terms & Conditions of Use below,
+                            which includes our Privacy & Security Statement. We may amend these Terms and Conditions
+                            from time to time; if we do, we will post those changes on this page within a reasonable
+                            time after the change. <br><br>
+
+
+
+                            Depending on your interaction with {{$compd? $compd->Companyname: 'Coming soon'}}, other privacy policies may apply in addition
+                            to these Terms & Conditions.<br><br>
+
+                            Trademarks and Copyrights<br><br>
+
+                            The materials on this Digital Presence are copyrighted and protected by worldwide copyright
+                            laws and treaty provisions. Any unauthorized use of these materials may violate copyright,
+                            trademark, and other laws. Materials on this Digital Presence may not be copied, reproduced,
+                            modified, published, uploaded, posted, transmitted, or distributed in any way without the
+                            prior written permission of the Digital Presence host. Except as expressly provided, the
+                            Digital Presence host does not grant any express or implied right to you under any patents,
+                            copyrights, trademarks, or trade secrets.<br>
+                            <br>
+
+                            No Warranties<br><br>
+
+                            Although the Digital Presence host has attempted to provide accurate information on this
+                            Digital Presence, it assumes no responsibility for the accuracy of the information. The
+                            Digital Presence host makes no representations or warranties on this Digital Presence with
+                            respect to its product or service offerings. Information regarding products or services
+                            offerings contained on this Digital Presence, including but not limited to information
+                            regarding features and benefits, technical information, or other similar information
+                            contained in documentation available on or from this Digital Presence, shall not be
+                            incorporated or integrated into any Digital Presence host warranty or other contractual
+                            right, privilege, or obligations otherwise provided under the terms of any agreement with
+                            the Digital Presence host. The Digital Presence host may make changes to the materials or
+                            products described in this Digital Presence at any time, without notice. The Digital
+                            Presence host makes no commitment to update these materials.<br>
+
+                            All information provided on this digital presence is provided to you on an “as is” basis,
+                            without warranty of any kind either express or implied, including but not limited to the
+                            implied warranties of merchantability, fitness for a particular purpose, and
+                            non-infringement. The digital presence host makes no warranty as to the accuracy,
+                            completeness, currency, or reliability of any content available through this digital
+                            presence. You are responsible for verifying any information before relying on it. Use of
+                            this digital presence and the content available on this digital presence is at your sole
+                            risk. The digital presence host makes no representations or warranties that use of this
+                            digital presence will be secure, uninterrupted or error-free. You are responsible for taking
+                            all necessary precautions to ensure that any content you may obtain from this digital
+                            presence is free of viruses.<br><br>
+
+                            Limitation of Liability<br><br>
+
+                            The digital presence host specifically disclaims any liability, whether based in contract,
+                            tort, strict liability, or otherwise, for any direct, indirect, incidental, consequential,
+                            or special damages arising out of or in any way connected with access to or use of this
+                            digital presence, even if the digital presence host has been advised of the possibility of
+                            such damages, including but not limited to reliance by any party on any content obtained
+                            through the use of this digital presence, whether caused in whole or in part by negligence,
+                            acts of god, telecommunications failure, theft or destruction of or unauthorized access to
+                            this digital presence, or related information or programs.<br><br>
+
+                            Content of Materials<br><br>
+
+                            The materials on this Digital Presence have protected information. This means it cannot be
+                            used or copied without the owner’s written consent. In most cases the owner is the Digital
+                            Presence host. In some cases the owner is a third party.<br><br>
+
+                            Links to other website<br><br>
+
+                            Certain links in this websites will lead you to other affiliated websites, which is
+                            subjected to their own Terms and Conditions. Other links may lead you to websites which are
+                            not under the control of Premium Holding. When you activate any of these you leave Premium
+                            Holding. Premium Holding accepts no responsibility or liability for contents of any other
+                            site to which a hypertext links exist and gives no representation or warranty (expressed or
+                            implied) as to the information on such sites.<br><br>
+
+                            Privacy and Security Statement<br><br>
+
+                            The Digital Presence host is committed to protecting the privacy of its customers and others
+                            who visit our website, or send us information via email. The Privacy and Security Statement
+                            below outlines how we collect and use information. It also tells you what to do if you do
+                            not want your personal information collected.<br><br>
+
+                            Personal Information and Privacy<br><br>
+
+                            Each time you visit our Digital Presence, our web server automatically recognizes and
+                            gathers non-personally identifying information such as but not limited to your computer’s IP
+                            address, browser software, operating system, pages viewed, and duration of your visit. This
+                            information is not linked to any personally identifiable information (“PII”).<br>
+
+                            In addition to information automatically collected we may also collect through surveys or
+                            questionnaires PII such as email addresses, name and address, telephone number; and
+                            customer-specific identifiers such as ID, TIN, etc. In cases where PII is collected the
+                            Digital Presence host takes precautions to ensure the security of this information.<br>
+
+                            The information we collect is used to help us better understand how visitors utilize the
+                            site and enhance the overall Digital Presence experience. It is also used to notify
+                            customers about updates to our Digital Presence, and is shared only with agents or
+                            contractors to assist in providing support for our internal operations. The information is
+                            disclosed when we are legally required to do so, which may be at the request of governmental
+                            authorities conducting an investigation to verify or enforce compliance with the policies
+                            governing our Digital Presence and applicable laws, or to protect against misuse or
+                            unauthorized use of our Digital Presence. The information also may be provided to a
+                            successor entity in connection with a corporate merger, consolidation, sale of assets, or
+                            other corporate change respecting the Digital Presence.<br><br>
+
+                            Cookies<br><br>
+
+                            Certain features of this site may require the use of cookies. A “cookie” is a method to pass
+                            information between the server and your web browser when you travel from web page to web
+                            page. Cookie information is stored on your hard drive in a special directory created when
+                            you installed your web browser. This information can only be read by the website that
+                            created it. No other website can access this information. No PII is stored in the cookies
+                            this site creates.<br>
+
+                            Most web browsers can be configured to reject cookies, or to notify you if a cookie is sent
+                            to you. If you are not sure whether your web browser has these capabilities you should
+                            contact the software manufacturer or your Internet service provider. If a user rejects a
+                            cookie, certain areas of the website may not function properly. The affected areas may
+                            include but are not limited to the following: inability to access certain areas of the
+                            website, inconvenience of having to enter personal information more often, and navigation
+                            ability throughout the website.<br>
+
+                            We may use third-party web analytics service providers that use cookies or other website
+                            technologies to help us analyze both how users use this website and the effectiveness of our
+                            marketing search terms. The information generated by the cookie about your use of this
+                            website (including, without limitation, your IP address) would be transmitted to and stored
+                            by this service provider. They will use this information to evaluate your use of our website
+                            and compile aggregated reports for us. The information that our service providers collect
+                            and provide to us is not personally identifiable.<br><br>
+
+                            Third-Party Links<br><br>
+
+                            This Digital Presence contains links to other sites that may be helpful to our clients. The
+                            Digital Presence host provides these links for your convenience and is not responsible for
+                            the accuracy or completeness of these external sites. The Digital Presence host is not
+                            responsible for the content or privacy practices of external sites and encourages you to
+                            review the privacy policies of those sites before you use them.
+                        </p>
+                    </div>
+
+
+
+                </div>
+                <!-- END Left Side-->
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- END Section Career -->
+
+    {{-- <!-- START Section Clients -->
+    <section class="sp-100 bg-white clients-section">
+        <div class="container">
+            <div class="client-slider" id="client-slider">
+                <div class="item">
+                    <img src="img/client/client-1.png" alt="client 1">
+                </div>
+                <div class="item">
+                    <img src="img/client/client-2.png" alt="client 2">
+                </div>
+                <div class="item">
+                    <img src="img/client/client-3.png" alt="client 3">
+                </div>
+                <div class="item">
+                    <img src="img/client/client-4.png" alt="client 4">
+                </div>
+                <div class="item">
+                    <img src="img/client/client-1.png" alt="client 5">
+                </div>
+                <div class="item">
+                    <img src="img/client/client-2.png" alt="client 6">
+                </div>
+                <div class="item">
+                    <img src="img/client/client-3.png" alt="client 7">
+                </div>
+                <div class="item">
+                    <img src="img/client/client-4.png" alt="client 8">
+                </div>
+            </div>
+        </div>
+    </section> --}}
+    <!-- END Sections Clients -->
 @endsection

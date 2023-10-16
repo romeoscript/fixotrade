@@ -1,66 +1,150 @@
-@extends("layouts.spacedcustomlayout")
+@extends('layouts.spacedcustomlayout')
 
-@section("body")
+@section('body')
+    <!-- START Section Page Title -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase mb-4 c-white">Investments</h2>
+                    <ul class="breadcrumb mb-0 justify-content-center">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Investments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Section Page Title -->
 
+    <!-- START Section Plan -->
+    <section class="bg-light sp-100-70">
+        <div class="container">
 
-<main class="whatweinvestin-contents">
-  <section>
-  <article>
-  <p class="text-contents">
-  <span class="Future optimax-caption" >{{$compd? $compd->Companyname: 'Future optimax'}} </span> Financial Management makes it possible for you to achieve your financial purpose in life and live the lifestyle you’ve always craved for. By investing in Real Estate, Forex, Crypto Currency, Stocks, and Cannabis, we guarantee our clients substantial monthly profit for two years. We are a purpose-driven company, bound together by our commitment to what we do and how we work together. We come to this business from many different perspectives, but we all hold common values that we bring to our work. We are constantly engaged in research and development. This is a necessity in the world of relentlessly changing global financial markets. By utilizing our group of experts in all aspect of investment, we can carefully identify investment opportunities that can generate maximum profit for our client over a long period. Our team of licensed fiduciary advisors understands that every investor is unique. With the dynamic tools used by both you and your financial advisor we are able to identify and alert you to opportunities so you can act on them.
-  After a client has successfully registered, verified and made a deposit into his or her account, we carefully allocate the funds and analyze the markets, define the most attractive asset categories and then select which assets to add to your portfolio, such as cryptocurrencies, stocks, REITs, cannabis or others. Over time, the client portfolio changes according to our vision of the market. In this way we can protect ourselves from market fluctuations and volatility.
-  
-  The goal of portfolio management is to maximize profits, but also minimize risks. It's a balancing act to get the return investor's need without taking undue risk. This is accomplished through careful analysis of asset allocation, diversification, and regularly scheduled rebalancing in some portfolio management styles.
-  </p>
-  </article> 
-  </section>
-  
-  <section class="whatweinvestin-cards">
-  <div class="box">
-  <div class="investcard-imgcontainer">
-   <a href="{{route('invest')}}" target="_blank"> 
-      <img src="{{asset('images/CRYPT.jpg')}}">
-  </a>
-  </div>
-  <a href="{{route('buybtc')}}" class="whatweinvestin-cta">Read More</a>
-   </div>
-   <div class="box">
-  <div class="investcard-imgcontainer">
-   <a href="#"> <img src="{{asset('images/CANNABIS.jpg')}}"></a>
-  </div>
-  <a href="{{route('cannabistrade')}}" class="whatweinvestin-cta">Read More</a>
-   </div>
-   <div class="box">
-  <div class="investcard-imgcontainer">
-   <a href="{{route('invest')}}" target="_blank"> 
-      <img src="{{asset('images/REALESTATE.jpg')}}">
-  </a>
-  </div>
-  <a href="{{route('realestatetrade')}}" class="whatweinvestin-cta">Read More</a>
-   </div>
-   <div class="box">
-  <div class="investcard-imgcontainer">
-   <a href="#"> <img src="{{asset('images/SPECIAL-TRADES.jpg')}}"></a>
-  </div>
-  <a href="{{route('specialtrades')}}" class="whatweinvestin-cta">Read More</a>
-   </div>
-   <div class="box">
-  <div class="investcard-imgcontainer">
-   <a href="#"> <img src="{{asset('images/STOCKS.jpg')}}"></a>
-  </div>
-  <a href="{{route('stocks')}}" class="whatweinvestin-cta">Read More</a>
-   </div>
-   <div class="box">
-  <div class="investcard-imgcontainer">
-   <a href="#"> <img src="{{asset('images/FOREX.jpg')}}"></a>
-  </div>
-  <a href="{{route('forextrade')}}" class="whatweinvestin-cta">Read More</a>
-   </div>
-   </section>
-          
-  </main>    
+            <div class="tab-content wow fadeIn">
+                <div role="tabpanel" class="tab-pane fade show active" id="yearly">
+                    <div class="row justify-content-center">
+                        @if ($investmentplans)
+                            @foreach ($investmentplans as $price)
+                                <div class="col-md-6 col-lg-4 mb-30">
+                                    <div class="price-item text-center">
+                                        <div class="price-top">
 
+                                            <h4 class="mb-0">{{ $price->name }}</h4>
+
+                                        </div>
+                                        <div class="price-content">
+                                            <ul class="border-bottom mb-30 mt-md-4 pb-3 text-left">
+                                                <li>
+                                                    <i class="zmdi zmdi-check mr-2"></i>
+                                                    <span class="c-black">Plan Return - {{ $price->percentage }}%
+                                                        Daily</span>
+                                                </li>
+                                                <li>
+                                                    <i class="zmdi zmdi-check mr-2"></i>
+                                                    <span class="c-black">Plan Duration - {{ $price->noofrepeat }}
+                                                        Days</span>
+                                                </li>
+                                                <li>
+                                                    <i class="zmdi zmdi-check mr-2"></i>
+                                                    <span class="c-black">Minimum Capital - ${{ $price->minimum }}</span>
+                                                </li>
+                                                <li>
+                                                    <i class="zmdi zmdi-check mr-2"></i>
+                                                    <span class="c-black">Maximum Capital - ${{ $price->maximum }}</span>
+                                                </li>
+                                                <li>
+                                                    <i class="zmdi zmdi-check mr-2"></i>
+                                                    <span class="c-black">Referral Commission -
+                                                        {{ $price->refpercent }}%</span>
+                                                </li>
 
 
+                                            </ul>
+                                            <a href="{{ route('register') }}" class="btn btn-custom">Invest Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
+                        {{-- <div class="col-md-6 col-lg-4 mb-30">
+                            <div class="price-item text-center">
+                                <div class="price-top">
 
+                                    <h4 class="mb-0">Silver Plan</h4>
+
+                                </div>
+                                <div class="price-content">
+                                    <ul class="border-bottom mb-30 mt-md-4 pb-3 text-left">
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Plan Return - 3% Daily</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Plan Duration - 5 Days</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Minimum Capital - $5,000</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Maximum Capital - $19,999</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Referral Commission - 10%</span>
+                                        </li>
+
+
+                                    </ul>
+                                    <a href="?a=signup" class="btn btn-custom">Invest Now</a>
+                                </div>
+                            </div>
+                        </div> --}}
+                        {{-- <div class="col-md-6 col-lg-4 mb-30">
+                            <div class="price-item text-center popular">
+                                <div class="price-top">
+
+                                    <h4 class="mb-0">Gold Plan</h4>
+
+                                </div>
+                                <div class="price-content">
+                                    <ul class="border-bottom mb-30 mt-md-4 pb-3 text-left">
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Plan Return - 5% Daily</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Plan Duration - 5 Days</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Minimum Capital - $20,000</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Maximum Capital - Unlimited</span>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-check mr-2"></i>
+                                            <span class="c-black">Referral Commission - 10%</span>
+                                        </li>
+
+
+                                    </ul>
+                                    <a href="?a=signup" class="btn btn-custom">Invest Now</a>
+                                </div>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
 @endsection()

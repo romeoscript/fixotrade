@@ -1,258 +1,377 @@
-@extends("layouts.spacedcustomlayout")
+@extends('layouts.spacedcustomlayout')
 
-@section("body")
+@section('body')
+    <!-- START Section Page Title -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase mb-4 c-white">About</h2>
+                    <ul class="breadcrumb mb-0 justify-content-center">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Section Page Title -->
 
-<!-- START SECTION BANNER -->
-<section class="page-title centred" style="background-image: url(assets/images/background/page-title.jpg);">
-  <div class="auto-container">
-      <div class="content-box clearfix">
-          <ul class="bread-crumb clearfix">
-              <li><a href="/">{{ $compd ? $compd->companyname : 'company name' }}</a></li>
-          </ul>
-          <h1>About Us</h1>                
-      </div>
-  </div>
-</section>
-
-<section class="about-style-four">
-  <div class="auto-container">
-      <div class="row clearfix">
-          <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-              <div id="content_block_13">
-                  <div class="content-box">
-                      <div class="sec-title style-four right">
-                          <h5>About {{ $compd ? $compd->companyname : 'company name' }}</h5>
-                          <h2>Why Choose Us</h2>
-                      </div>
-                      <div class="text">
-                          <p>{{ $compd ? $compd->companyname : 'company name' }} is a professional wealth management company with emphasis on Wealth Creation
-                              and Digital Assets. We offer various insured services involved in the Blockchain with our prime interest in
-                              Cryptocurrency trading, Real Estate Investment, Oil and Gas, Financial and Investment planning.
-
-{{ $compd ? $compd->companyname : 'company name' }} has qualified and licensed financiers that manages and provides financial consulting services for her investors. 
-We pride ourselves a world class professional customer service, unique trading strategies, optimum transparency and fidelity.
-Any fund you invest with {{ $compd ? $compd->companyname : 'company name' }} is yours and you are free to withdraw your total balance whenever you wish as signed 
-in your trading contract.
-
-We have a deal with our Investments Insurance partners, best in the market from USA which trades in our
-Business Enterprise portfolio and in return provides insurance services and elite attorneys for {{ $compd ? $compd->companyname : 'company name' }}.</p>
-                      </div>
-                      
-                      
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-              <div id="image_block_four">
-                  <div class="image-box">
-                      <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-23.png);"></div>
-                      <figure class="image wow slideInRight animated animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInRight;">
-                          <img src="images/faq.jpeg" alt="">
-                      </figure>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="feature-style-four about-page-2">
-  <div class="inner-content clearfix">
-      <div class="feature-block-four">
-          <div class="inner-box">
-              <div class="hidden-icon"><i class="flaticon-search"></i></div>
-              <div class="inner">
-                  <div class="icon-box"><i class="flaticon-search"></i></div>
-                  <h3>Connecting Opportunities</h3>
-                  <p>Opportunities arise daily and are numerous, and we provide you with the means to connect from one to the other</p>
-              </div>
-          </div>
-      </div>
-      <div class="feature-block-four">
-          <div class="inner-box">
-              <div class="hidden-icon"><i class="flaticon-claim"></i></div>
-              <div class="inner">
-                  <div class="icon-box"><i class="flaticon-claim"></i></div>
-                  <h3>Maintain Control</h3>
-                  <p>Maintaining control is the ability to drive your success however – and whichever – way you want.</p>
-              </div>
-          </div>
-      </div>
-      <div class="feature-block-four">
-          <div class="inner-box">
-              <div class="hidden-icon"><i class="flaticon-presentation"></i></div>
-              <div class="inner">
-                  <div class="icon-box"><i class="flaticon-presentation"></i></div>
-                  <h3>Freedom of Choice</h3>
-                  <p>Benefit from tailored solutions that meet your needs. Over 100 tradable assets and unlimited market access</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="team-style-three mt-5">
-  <div class="auto-container">
-      <div class="row clearfix">
-          <div class="col-lg-3 col-md-3 col-sm-12 team-block">
-              <div class="team-block-three">
-                  <div class="inner-box">
-                      <figure class="image-box">
-                          <img src="team/john.png" alt="">
-                      </figure>
-                      <div class="lower-content">
-                          <h3>John Champagne</h3>
-                          <span class="designation">MANAGING DIRECTOR</span>
-                          <p>JOHN M. CHAMPAGNE II, CAIA serves as Managing Director at {{ $compd ? $compd->companyname : 'company name' }}. 
-                              John’s daily job functions include fund manager due diligence, risk analysis and working
-                              to support the Investment Committee.  Before joining {{ $compd ? $compd->companyname : 'company name' }}, John
-                              worked as a Senior Hedge Fund Research Associate at Cambridge Associates, LLC in Washington,
-                              D.C.
-
-                               John holds the Chartered Alternative Investment Analyst (CAIA) designation. 
-                               He earned a BS in Economics from the University of Georgia and is currently a Level 
-                               1 CFA Candidate.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 team-block">
-              <div class="team-block-three">
-                  <div class="inner-box">
-                      <figure class="image-box">
-                          <img src="team/josh.png" alt="">
-                      </figure>
-                      <div class="lower-content">
-                          <h3>Josh Phillips</h3>
-                          <span class="designation">SENIOR ANALYST</span>
-                          <p>
-                          Josh Phillips serves as a Senior Analyst at {{ $compd ? $compd->companyname : 'company name' }}. 
-                          Josh’s focus it to support the investment team through his due diligence, research and 
-                          analytical efforts. Josh is a graduate of Mercer University where he received a BBA
-                          in International Business and a minor in Spanish. He graduated top of his major and was
-                          a member of the Men’s Varsity Lacrosse team and the Student Managed Investment Fund.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 team-block">
-              <div class="team-block-three">
-                  <div class="inner-box">
-                      <figure class="image-box">
-                          <img src="team/ian-greenstreet.png" alt="">
-                      </figure>
-                      <div class="lower-content">
-                          <h3>Ian Greenstreet</h3>
-                          <span class="designation">MANAGER</span>
-                          <p>Ian Greenstreet is an Investment Banker and international expert in Financial Risk. 
-                              He is one of the managers of {{ $compd ? $compd->companyname : 'company name' }}, a London-based Corporate 
-                              Finance firm, approved and regulated by the Financial Conduct Authority. 
-                              With over 35 years of experience and insight within the banking and financial 
-                              services sector, Ian is a very well networked business executive who leverages 
-                              his relationships and expertise to assist companies in finding cutting technological 
-                              solutions that improve their operations and help provide their clients with 
-                              exceptional service.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-3 col-sm-12 team-block">
-              <div class="team-block-three">
-                  <div class="inner-box">
-                      <figure class="image-box">
-                          <img src="team/jonathan.png" alt="">
-                      </figure>
-                      <div class="lower-content">
-                          <h3>Jonathan Cheng</h3>
-                          <span class="designation">SENIOR ANALYST</span>
-                          <p>
-                              Jonathan is a Chartered Accountant having trained with Deloitte Touche in London.
-                              His executive career has spanned 35 years and he has worked in senior roles at 
-                              leading financial institutions such as HSBC, Lloyds bank.  Ian was CEO of Henderson 
-                              Portfolio Managers in Luxembourg a group that now has $130bn under management and 
-                              Head of Risk ABN AMRO La Salle bank responsible for a £72 billion trading portfolio 
-                              and a £39 billion portfolio. A man of foresight, he was able to predict the downfall 
-                              of Long Term Capital Management saving ABN AMRO bank € 4 billion while being able to
-                              implement a system of including risk experts on City trading floors to maximize 
-                              profitability and mitigate risk on transactions.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+    <!-- START Section About Us -->
+    <section class="bg-light sp-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <h5 class="subtitle-left">Introducing</h5>
+                    <h3>Delivering Superior Investment Results</h3>
+                    <p class="mb-30">{{$compd? $compd->Companyname: 'Coming soon'}} is a top-tier investment management firm that specializes in alternative
+                        investment strategies on a global scale. The company's edge lies in its seasoned team of investment
+                        experts, a worldwide presence, and a cohesive investment philosophy.</p>
+                    <p>This approach to investment is guided by six core principles, namely, risk management, consistency,
+                        exploiting market inefficiencies, specialization, bottom-up analysis, and rejection of market
+                        timing. In addition to these tenets, Everest also adheres to a set of fundamental business
+                        principles, which reflect its dedication to superior investment performance, alignment of interests
+                        with clients, fostering a culture of collaboration and cooperation, and pursuing disciplined,
+                        strategic growth opportunities.</p>
+                </div>
+                <div class="col-lg-6 col-12 d-none d-lg-block wow zoomIn pl-5">
+                    <div class="about-page-img">
+                        <img src="{{asset('ldxa-trade.com/img/pages/about-img.png')}}" class="img-fluid" alt="Business">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Section About Us -->
 
 
-<!--section class="clients-section">
-  <div class="auto-container">
-      <div class="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-1.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-2.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-3.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-4.png" alt=""></a></figure>
-          <figure class="client-logo"><a href="index.html"><img src="assets/images/clients/clients-5.png" alt=""></a></figure>
-      </div>
-  </div>
-</section-->
 
-<section class="cta-section">
-  <div class="auto-container">
-      <div class="inner-container clearfix">
-          <div class="title pull-left">
-              <h2>Open account for free and start investing!</h2>
-          </div>
-          <div class="btn-box pull-right">
-              <a href="{{route('register')}}">Get Started</a>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- cta-section end -->
+    <!-- START Section About Us -->
 
 
-<!-- fun-fact -->
-<section class="fun-fact centred">
-  <div class="auto-container">
-      <div class="row clearfix">
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <span class="count-text" data-speed="1500" data-stop="100253">0</span>
-                  </div>
-                  <p>Active Users</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <span class="count-text" data-speed="1500" data-stop="1338">0</span>
-                  </div>
-                  <p>Running Days</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <img src="images/coins/usdt.html" style="width: 30px; height: auto;" alt=""> USDT <span class="count-text" data-speed="1500" data-stop="300021142.336">0</span>
-                  </div>
-                  <p>DEPOSIT</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 counter-column">
-              <div class="counter-block-one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                  <div class="count-outer count-box" style="font-size: 35px;">
-                      <img src="images/coins/usdt.html" style="width: 30px; height: auto;" alt=""> USDT <span class="count-text" data-speed="1500" data-stop="303452266721.39">0</span>
-                  </div>
-                  <p>WITHDRAWALS</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            a {
+                color: red;
+            }
+        </style><!--
+    <style>
+    .container {
+        background-color: #f9f9f9;
+        padding: 50px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        margin-bottom: 50px;
+    }
+    .subtitle-left {
+        color: #1c2331;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    h5 {
+        color: #1c2331;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .registration-number, .address {
+        color: #444;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    a.btn {
+        background-color: #f44336;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+    }
+    a.btn:hover {
+        background-color: #1c2331;
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 768px) {
+        .subtitle-left {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        .col-lg-6 {
+            margin-bottom: 30px;
+        }
+        a.btn {
+            width: 100%;
+        }
+    }
+    </style>-->
 
+
+
+    </head>
+
+    <body>
+
+
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <h5 class="subtitle-left">Certificate</h5>
+                    <h5>UK Certificate</h5>
+                    <div class="registration-number">Registration number: 08130377</div>
+                    <div class="address">Address: 1st Floor Hanover House, 14 Hanover Square, London, England, W1S 1HN</div>
+                </div>
+                <br>
+                <div class="col-lg-6 col-12 text-lg-end text-center">
+                    <a href="https://find-and-update.company-information.service.gov.uk/company/08130377"
+                        class="btn btn-primary">Verify Certificate</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <img src="{{asset('ldxa-trade.com/img/certificate.png')}}" alt="Certificate" class="responsive-image">
+    </body>
+
+
+    <!-- START Section Services -->
+    <section class="service-section overlay-bg bg-light sp-100-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title title-left text-center text-lg-left">
+                        <h3 class="top-sep">Business Principles</h3>
+                        <p>Our community is directed by our commercial tenets, and our tactics function in accordance with
+                            our cohesive investment ideology. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12 mb-30">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <i class="flaticon-consultation"></i>
+                        </div>
+                        <h5 class="btm-sep">Market Research</h5>
+                        <p> Our inquiry centers on listing the constituents necessary for achieving prosperity and detecting
+                            potential investments that fulfill those prerequisites. </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 mb-30">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <i class="flaticon-search-engine"></i>
+                        </div>
+                        <h5 class="btm-sep">Excellence</h5>
+                        <p>Our objective entails achieving superior outcomes in the realm of investment. Specifically, we
+                            aim to secure favorable returns while limiting risk exposure. </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 mb-30">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <i class="flaticon-computer"></i>
+                        </div>
+                        <h5 class="btm-sep">Ethical Personnel</h5>
+                        <p>It is essential to maintain a workplace where cooperation is promoted and harmony prevails. To
+                            achieve this, it is necessary to avoid personnel leaving the organization frequently, prevent
+                            political maneuvering within the office, and discourage unhealthy competition among colleagues.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 mb-30">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <i class="flaticon-seo"></i>
+                        </div>
+                        <h5 class="btm-sep">Common Interests</h5>
+                        <p>In order to establish mutual interests with our customers, we place significant emphasis on
+                            identifying potential conflicts of interests, and if feasible, prevent them from occurring. When
+                            avoidance is not an option, we handle these situations in an equitable manner.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 mb-30">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <i class="flaticon-management"></i>
+                        </div>
+                        <h5 class="btm-sep">Client Communication</h5>
+                        <p>Our correspondence with customers should cater to their requirements and reinforce our
+                            associations with them. It is our objective that each customer comprehends our ideology,
+                            methodology, undertakings, and outcomes. </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 mb-30">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <i class="flaticon-deal"></i>
+                        </div>
+                        <h5 class="btm-sep">Profitability</h5>
+                        <p>The financial gain of our enterprise must arise from executing the aforementioned actions.
+                            Premium Holding is administered with the objective of serving its patrons and their respective
+                            groups, in addition to benefiting its proprietors and staff. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Section Services -->
+
+
+
+    <!-- START Section Projects -->
+    <section class="project-section bg-w sp-100-70">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title title-left text-center text-lg-left">
+                        <h3 class="top-sep">Key Market Stakes</h3>
+
+                    </div>
+                </div>
+            </div>
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener"
+                        target="_blank"><span class="blue-text"></span></a></div>
+
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                    {
+                        "width": "100%",
+                        "height": "500",
+                        "symbolsGroups": [{
+                                "name": "Indices",
+                                "originalName": "Indices",
+                                "symbols": [{
+                                        "name": "FOREXCOM:SPXUSD",
+                                        "displayName": "S&P 500"
+                                    },
+                                    {
+                                        "name": "FOREXCOM:NSXUSD",
+                                        "displayName": "Nasdaq 100"
+                                    },
+                                    {
+                                        "name": "FOREXCOM:DJI",
+                                        "displayName": "Dow 30"
+                                    },
+                                    {
+                                        "name": "INDEX:NKY",
+                                        "displayName": "Nikkei 225"
+                                    },
+                                    {
+                                        "name": "INDEX:DEU30",
+                                        "displayName": "DAX Index"
+                                    },
+                                    {
+                                        "name": "FOREXCOM:UKXGBP",
+                                        "displayName": "FTSE 100"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Commodities",
+                                "originalName": "Commodities",
+                                "symbols": [{
+                                        "name": "CME_MINI:ES1!",
+                                        "displayName": "S&P 500"
+                                    },
+                                    {
+                                        "name": "CME:6E1!",
+                                        "displayName": "Euro"
+                                    },
+                                    {
+                                        "name": "COMEX:GC1!",
+                                        "displayName": "Gold"
+                                    },
+                                    {
+                                        "name": "NYMEX:CL1!",
+                                        "displayName": "Crude Oil"
+                                    },
+                                    {
+                                        "name": "NYMEX:NG1!",
+                                        "displayName": "Natural Gas"
+                                    },
+                                    {
+                                        "name": "CBOT:ZC1!",
+                                        "displayName": "Corn"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Bonds",
+                                "originalName": "Bonds",
+                                "symbols": [{
+                                        "name": "CME:GE1!",
+                                        "displayName": "Eurodollar"
+                                    },
+                                    {
+                                        "name": "CBOT:ZB1!",
+                                        "displayName": "T-Bond"
+                                    },
+                                    {
+                                        "name": "CBOT:UB1!",
+                                        "displayName": "Ultra T-Bond"
+                                    },
+                                    {
+                                        "name": "EUREX:FGBL1!",
+                                        "displayName": "Euro Bund"
+                                    },
+                                    {
+                                        "name": "EUREX:FBTP1!",
+                                        "displayName": "Euro BTP"
+                                    },
+                                    {
+                                        "name": "EUREX:FGBM1!",
+                                        "displayName": "Euro BOBL"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Forex",
+                                "originalName": "Forex",
+                                "symbols": [{
+                                        "name": "FX:EURUSD"
+                                    },
+                                    {
+                                        "name": "FX:GBPUSD"
+                                    },
+                                    {
+                                        "name": "FX:USDJPY"
+                                    },
+                                    {
+                                        "name": "FX:USDCHF"
+                                    },
+                                    {
+                                        "name": "FX:AUDUSD"
+                                    },
+                                    {
+                                        "name": "FX:USDCAD"
+                                    }
+                                ]
+                            }
+                        ],
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "locale": "en"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+    </section>
+    <!-- END Section Projects -->
 @endsection
