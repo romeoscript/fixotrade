@@ -3,7 +3,7 @@
     <div class="main-content">
 
         <!--header section start-->
-        <section class="breadcrumb-section" style="background-image: url('https://futuresoptimax.com/assets/images/70.jpg">
+        <section class="breadcrumb-section" style="background-image: url('https://fixotrade.com/assets/images/70.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
