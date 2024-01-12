@@ -40,7 +40,7 @@
                                                     <input id="checkbox1" value="1" name="show_bonus" checked
                                                         type="checkbox">
                                                     <label for="checkbox1">
-                                                        Send Bonus Mail
+                                                        Send Penalty Mail
                                                     </label>
                                                 </div>
                                             </div>

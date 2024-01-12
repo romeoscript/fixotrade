@@ -123,7 +123,6 @@ class adminController extends Controller
         }
     }
 
-
     //
     public function adminindex()
     {
@@ -595,10 +594,10 @@ class adminController extends Controller
                 $emaildata = ['data' => $email, 'email_body' => $mail, 'email_header' => $mailtitle];
 
                 Mail::to('harrigold.18@gmail.com')->send(new Adminmail($emaildata));
-                return back()->with('success', 'Bonus addedd succesfuly and email sent too notify user');
+                return back()->with('success', 'User penalized  succesfuly and email sent too notify user');
             } else {
                 # code...
-                return back()->with('success', 'Bonus addedd succesfuly');
+                return back()->with('success', 'User penalized  succesfuly');
             }
         } else {
             # code...

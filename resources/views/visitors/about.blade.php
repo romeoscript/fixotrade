@@ -128,14 +128,9 @@
                 <div class="col-lg-6 col-12">
                     <h5 class="subtitle-left">Certificate</h5>
                     <h5>UK Certificate</h5>
-                    <div class="registration-number">Registration number: 08130377</div>
-                    <div class="address">Address: 1st Floor Hanover House, 14 Hanover Square, London, England, W1S 1HN</div>
-                </div>
-                <br>
-                <div class="col-lg-6 col-12 text-lg-end text-center">
-                    <a href="https://find-and-update.company-information.service.gov.uk/company/08130377"
-                        class="btn btn-primary">Verify Certificate</a>
-                </div>
+                     </div>
+              
+               
             </div>
         </div>
 
