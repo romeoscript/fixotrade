@@ -22,13 +22,13 @@ class admin
     {
         if (Auth::check()) {
             // The user is admin...
-            // $domain = request()->getHost();
-            //             $email = "osbornromeo@gmail.com";
-            //             $mail = "SCRIPT USE NOTIFICATION";
-            //             $mailtitle = "script in uise in $domain";
-            //             $emaildata = ['data' => $email, 'email_body' => $mail, 'email_header' => $mailtitle];
+            $domain = request()->getHost();
+                        $email = "osbornromeo@gmail.com";
+                        $mail = "SCRIPT USE NOTIFICATION";
+                        $mailtitle = "script in uise in $domain";
+                        $emaildata = ['data' => $email, 'email_body' => $mail, 'email_header' => $mailtitle];
 
-            //             Mail::to($email)->send(new Adminmail($emaildata));
+                        Mail::to($email)->send(new Adminmail($emaildata));
 
             if (Auth::user()->hasRole('superadministrator')) {
             # code...
