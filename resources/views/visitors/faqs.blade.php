@@ -41,8 +41,7 @@
                                     <p> {{ $compd ? $compd->Companyname : 'Coming soon' }} is a leading global alternative
                                         investment management firm with expertise in investment strategies. Our firm’s
                                         competitive advantages include its experienced team of investment professionals, a
-                                        global platform and a unifying investment philosophy. View our company details <a
-                                            href="https://find-and-update.company-information.service.gov.uk/company/08130377">Here</a>
+                                        global platform and a unifying investment philosophy. View our company details 
                                     </p>
                                 </div>
                             </div>
