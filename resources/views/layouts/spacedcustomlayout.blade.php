@@ -56,7 +56,7 @@
         <div class="navigation-bar" id="affix">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light navbar-reset">
-                    <a class="logo" href="index.html?a=home">
+                    <a class="logo" href="/">
                         <img class="logo-default" src="{{asset('ldxa-trade.com/img/logo-light.png')}}" alt="Bootbox">
                     </a>
 
