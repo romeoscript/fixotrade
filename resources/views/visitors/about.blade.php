@@ -37,7 +37,7 @@
 
             <div style="display: flex;justify-content:center; gap:2%; padding:1rem;">
                 <div style="display: flex; justify-content: center; gap: 2%">
-                    <a href="{{ asset('ldxa-trade.com/img/pdf.pdf') }}" download="company_pdf.pdf" class="btn btn-custom mt-4 block">Download company pdf</a>
+                    <a href="{{ asset('ldxa-trade.com/img/company.pdf') }}" download="company_pdf.pdf" class="btn btn-custom mt-4 block">Download company pdf</a>
                     <a href="{{ asset('ldxa-trade.com/img/whitepaper.pdf') }}" download="company_whitepaper.pdf" class="btn btn-custom mt-4 block">Download whitepaper</a>
                 </div>
             </div>
