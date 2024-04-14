@@ -21,12 +21,13 @@
     <!-- START Card With Image -->
     <h4 class="box-title mb-10">Packages</h4>
     <div class="row">
-        
+
       @if ($categories)
 
       @foreach ( $categories as $category)
 
       <div class="col-md-12 col-lg-4" style="height: 360px">
+      <a href="{{route('plan_specific',$category)}}">
         <div class="box box-default pull-up">
             <img class="card-img-top img-responsive" src="images/packages/img{{$loop->index + 1}}.png" alt="Card image cap">
         <a href="{{route('plan_specific',$category)}}">
@@ -35,6 +36,7 @@
               <p><div class="col-12 col-md-12">
                 <div class="box box-body bg-hexagons-white pull-up">
                   <div class="media align-items-center p-0">
+
                     <div class="text-center">
                       <a href="#"><i class="cc LSK mr-5" title="OMG"></i></a>
                       </div>
@@ -50,14 +52,14 @@
               </div>
               </p>
           </div>
-        
+
         </a>
           <!-- /.box-body -->
         </div>
         <!-- /.box -->
       </div>
-      
-        
+</a>
+
       @endforeach
       <br>
       <br>
@@ -68,9 +70,9 @@
       <br>
       <br>
       <br>
-        
 
-        
+
+
 
 
 
