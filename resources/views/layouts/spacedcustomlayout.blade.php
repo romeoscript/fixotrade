@@ -150,8 +150,18 @@
 
 
 
-    <script src="//code.tidio.co/kv4ebc72edyeuvexpydcplllzldkasg0.js" async></script>
-
+  <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '08bf8136822f2847e9ea57118118155dc2c1bb84';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
     <!-- START Footer -->
     <footer class="bg-white footer">
         <div class="container">
