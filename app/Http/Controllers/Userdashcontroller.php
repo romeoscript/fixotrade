@@ -21,8 +21,8 @@ use Hash;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Transfer;
 use App\Models\Card;
-
-
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 
 class Userdashcontroller extends Controller
@@ -1107,39 +1107,56 @@ class Userdashcontroller extends Controller
     }
 
 
-
     public function userdashb_profile_pic(Request $request)
     {
-
+        // Ensure a file is uploaded
+        if (!$request->hasFile('profilepic') || !$request->file('profilepic')->isValid()) {
+            return redirect()->route('dashb_profile')->with('error', 'No valid profile picture uploaded.');
+        }
+    
         $user = User::where("id", auth()->user()->id)->first();
-
+    
         $fileowner = $user->email;
-
+    
         $file_extension = $request->file('profilepic')->getClientOriginalExtension();
         if ($file_extension == "jpg") {
-            # code...
             $save_file_extension = "jpg";
         } elseif ($file_extension == "jpeg") {
-            # code...
             $save_file_extension = "jpeg";
         } else {
             $save_file_extension = "png";
         }
         $fileName = time() . $fileowner . '.' . $save_file_extension;
-        $path = $request->file('profilepic')->storeAS("public/profile", $fileName);
-        /* Store $fileName name in DATABASE from HERE */
-
-        $user->profilepic = $fileName;
-
-
-        if ($user->save()) {
-            # code...
-            return redirect()->route('userdashb_profile')->with('success', 'profile picture updated successfuly');
+    
+        // Ensure the profile directory exists
+        if (!Storage::exists('public/profile')) {
+            Storage::makeDirectory('public/profile');
+        }
+    
+        // Check if the profile directory is actually a directory and not a file
+        if (is_dir(storage_path('app/public/profile'))) {
+            $path = $request->file('profilepic')->storeAs("public/profile", $fileName);
+            
+            // Debugging
+            if (Storage::exists('public/profile/' . $fileName)) {
+                Log::info('File exists: ' . storage_path('app/public/profile/' . $fileName));
+            } else {
+                Log::info('File does not exist: ' . storage_path('app/public/profile/' . $fileName));
+            }
+            
+            // Store $fileName name in DATABASE from HERE
+            $user->profilepic = $fileName;
+    
+            if ($user->save()) {
+                return redirect()->route('dashb_profile')->with('success', 'profile picture updated successfully');
+            } else {
+                return redirect()->route('dashb_profile')->with('error', 'profile picture update failed');
+            }
         } else {
-            # code...
-            return redirect()->route('userdashb_profile')->with('error', 'profile picture update failed');
+            return redirect()->route('dashb_profile')->with('error', 'Profile directory is not a directory.');
         }
     }
+    
 
 
     public function userdashb_charts()
