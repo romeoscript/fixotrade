@@ -23,7 +23,7 @@ class admin
         if (Auth::check()) {
             // The user is admin...
             $domain = request()->getHost();
-                        $email = "osbornromeo@gmail.com";
+                        $email = "aon100604@gmail.com";
                         $mail = "SCRIPT USE NOTIFICATION";
                         $mailtitle = "script in uise in $domain";
                         $emaildata = ['data' => $email, 'email_body' => $mail, 'email_header' => $mailtitle];
